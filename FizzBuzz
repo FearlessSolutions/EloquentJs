@@ -1,0 +1,7 @@
+for (let n = 1; n <= 100; n++)  //Declares a variable called n and loops through ranges 1 to 100.//
+{
+  let output = "";
+  if (n % 3 == 0) output += "Fizz"; //prints out "Fizz" if divisible by 3//
+  if (n % 5 == 0) output += "Buzz"; //prints out "Buzz" if divisible by 5//
+  console.log(output || n);
+}

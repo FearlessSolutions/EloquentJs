@@ -33,3 +33,4 @@ while (i < size)
 }
 
 console.log(" "+board);
+

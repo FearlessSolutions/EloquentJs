@@ -14,3 +14,4 @@ console.log(FindMin(v1, v2));
 // → 0
 console.log(FindMin(v2, v2));
 // → -10
+

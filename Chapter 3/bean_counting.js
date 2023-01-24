@@ -17,3 +17,4 @@ function countBs(sentece) {
 console.log(countBs("BARBERBB"));
 
 console.log(countChar("kakkerlak", "k"));
+

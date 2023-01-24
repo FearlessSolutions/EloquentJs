@@ -5,3 +5,4 @@ while (line.length < 7){
   console.log(line);
 }
 
+

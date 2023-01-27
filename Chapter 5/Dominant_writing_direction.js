@@ -44,5 +44,5 @@ function dominantDirection(text) {
 
 console.log(dominantDirection("Hello!"));
 // → ltr
-console.log(dominantDirection("Hey, مساء الخير"));
+console.log(dominantDirection("Hey,"));
 // → rtl

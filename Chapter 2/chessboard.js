@@ -34,4 +34,4 @@ while (i < size)
   i++;
 }
 
-console.log(" "+board);
+console.log(board);

@@ -24,6 +24,10 @@ while (i < size)
 		j++;
 		
 	}
+	if(size % 2 == 0)
+	{
+	    flag = ! flag;
+	}
 
 
   board += "\n";

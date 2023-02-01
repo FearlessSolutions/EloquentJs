@@ -1,4 +1,4 @@
-let size = 3;
+let size = 8;
 
 let board = "";
 let i = 0;

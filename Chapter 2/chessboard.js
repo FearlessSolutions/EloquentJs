@@ -1,4 +1,4 @@
-let size = 8;
+let size = 3;
 
 let board = "";
 let i = 0;
@@ -6,8 +6,7 @@ let flag = true;
 while (i < size) 
 {
 	let j = 0;
-	if (i % 2 == 0)
-	{board += " ";}
+
 	
 	while (j < size) 
 	{
@@ -25,12 +24,10 @@ while (i < size)
 		j++;
 		
 	}
-	if (flag == true)
-	{flag = false;}
+
 
   board += "\n";
   i++;
 }
 
 console.log(" "+board);
-

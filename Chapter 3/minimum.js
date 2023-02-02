@@ -5,12 +5,12 @@ function FindMin(var1, var2) {
 	  return var1;
   else
   {
-	  return "both numbers are equal";
+	  return var1;
   }
 }
 
-let v1 = 100, v2 = 20;
-console.log(FindMin(v1, v2));
+console.log(FindMin(0, 10));
 // → 0
-console.log(FindMin(v2, v2));
+console.log(FindMin(0, -10));
+// → -10
 // → -10

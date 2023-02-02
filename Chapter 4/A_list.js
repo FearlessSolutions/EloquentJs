@@ -1,10 +1,12 @@
+// Your code here.
 let l = null;
 let i = 0
 function arrayToList(array) {
-  if (array.length == i)
+  if (array.length == 0)
 		return l;
 	
-	l = {value: array[i++], rest: l};
+	l = {value: array[array.length - 1], rest: l};
+	array.splice(array.length -1, 1);
 	return arrayToList(array);
   
 }
@@ -17,7 +19,6 @@ function listToArray(list) {
 	}
 	array.push(list.value);
 	return listToArray(list.rest);
-  
 }
 
 function prepend(value, list) {
@@ -33,12 +34,13 @@ function nth(list, n) {
   }
   return nth(list.rest, n - 1);
 }
-
-
-console.log(arrayToList([10, 20, 30]));
+console.log(arrayToList([10, 20]));
+l = null;
+// → {value: 10, rest: {value: 20, rest: null}}
 
 console.log(listToArray(arrayToList([10, 20, 30])));
-
+// → [10, 20, 30]
 console.log(prepend(10, prepend(20, null)));
-
+// → {value: 10, rest: {value: 20, rest: null}}
 console.log(nth(arrayToList([10, 20, 30]), 1));
+// → 20
